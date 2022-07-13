@@ -5,11 +5,18 @@ import FilePresentIcon from '@mui/icons-material/FilePresent';
 import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
 import AddReactionIcon from '@mui/icons-material/AddReaction';
 import Button from '@mui/material/Button';
+import { Paper } from "@mui/material";
 
 export default function Postbox() {
   return (
-    <div className="postbox-container">
-        <div className="postbox">
+    
+      <>
+            <Paper elevation={3}
+            sx={{
+             
+              padding: '20px',
+            }}
+            >
             <div className="postbox-top">
               <img src={img1} alt="" className="postbox-profile-img"/>
               <input
@@ -42,9 +49,9 @@ export default function Postbox() {
                 </div>
                </div>
 
-               <Button className="postbox-submitbtn"  variant="contained">Submit</Button>
+              
             </div>
-        </div>
-    </div>
+            </Paper>
+            </>
   )
 }

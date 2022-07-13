@@ -1,3 +1,31 @@
 .leftnav-container{
-    flex: 3;
+    flex: 0.3;
+    
+}
+.leftnavTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.leftnavpimg{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* margin: 10px; */
+    padding: 10px;
+}
+
+.leftnavStat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.leftnavBgimg{
+    width: 100%;
+    height: 100px;
+    margin-bottom: -50px;
+    object-fit: cover;
+
 }

@@ -7,17 +7,17 @@ export const Users = [
     {
       id:2,
       profilePicture: "./assets/img/person2.jpg",
-      username: "Arjun Deyna",
+      username: "Arjun Dey",
     },
     {
       id:3,
       profilePicture: "./assets/img/person3.jpg",
-      username: "Kaku Mondal",
+      username: "Kaku ",
     },
     {
       id:4,
       profilePicture: "./assets/img/person4.jpg",
-      username: "Aritrada Sunbe",
+      username: "Aritra",
     },
     
    
@@ -29,8 +29,8 @@ export const Users = [
   export const Posts = [
     {
       id: 1,
-      desc: "Jibon ta gyror moton. dhire dhire adjust hoe jabe",
-      photo: "./assets/posts/1.jpg",
+      desc: "description1",
+      photo: "https://unsplash.com/photos/Nr88sR3i4Tg",
       date: "5 mins ago",
       userId: 1,
      
@@ -45,7 +45,7 @@ export const Users = [
     },
     {
       id: 3,
-      desc: "Ki ar hobe",
+      desc: "description2",
       photo: "./assets/posts/3.jpg",
       date: "1 hour ago",
       userId: 3,

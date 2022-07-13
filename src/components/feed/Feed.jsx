@@ -9,9 +9,13 @@ export default function Feed() {
     <div className="feed-container">
     <div className="feeditems">
       <Postbox/>
+     
+      
       {Posts.map((p) => (
           <Post key={p.id} post={p} />
         ))}
+
+
     </div>    
     </div>
   )

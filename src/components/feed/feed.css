@@ -1,5 +1,5 @@
 .feed-container {
-  flex: 5;
+  flex: 0.5;
   height: calc(100vh - 60px);
   margin-top: 10px;
 }

@@ -1,8 +1,11 @@
 import "./post.css";
-// import { MoreVert } from "@material-ui/icons";
+// import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { Users } from "../../fakeData";
+import { Paper } from "@mui/material";
 // import { useState } from "react";
-
+import img1 from "../../assets/img/profileimg.jpg"
+import img2 from "../../assets/posts/3.jpg"
+import FavoriteIcon from '@mui/icons-material/Favorite';
 export default function Post({ post }) {
  
  console.log(post);
@@ -14,43 +17,45 @@ export default function Post({ post }) {
   // }
 
   return (
-    <div className="post">
-      <div className="postWrapper">
-        <div className="postTop">
-          <div className="postTopLeft">
-            <img
-              className="postProfileImg"
-              src={Users.filter((u) => u.id === post?.userId)[0].profilePicture}
-              alt=""
-            />
-            <span className="postUsername">
-              {Users.filter((u) => u.id === post?.userId)[0].username}
-            </span>
-            <span className="postDate">{post.date}</span>
-          </div>
-          <div className="postTopRight">
-            {/* <MoreVert /> */}
-          </div>
-        </div>
-        <div className="postCenter">
-          <span className="postText">{post.desc}</span>
-          <img className="postImg" src={post.photo} alt="" />
-        </div>
-        <div className="postBottom">
+    <>
+    <Paper elevation={3}
+    sx={{
+      width: '100%',
+      margin: '30px 0',
 
-          <div className="postBottomLeft">
-
-
-            {/* <img className="likeIcon" src="" onClick={likeHandler} alt="" />
-            <img className="likeIcon" src="" onClick={likeHandler} alt="" />
-            <span className="postLikeCounter">{like} people like it</span> */}
-          </div>
-          <div className="postBottomRight">
-            {/* <span className="postCommentText">{post.comment} comments</span> */}
-          </div>
-        </div>
+    }}
+    >
+    <div className="postTop">
+      <div className="postTopLeft">
+        <img className="postProfileImg"  src={img1} alt="" />
+        <span className="postUsername"> Dhrubajit Bhattacharjee </span>
+        <span className="postDate">5 hours ago</span>
       </div>
+      <div className="PostTopRight">
+{/* <MoreVertIcon/> */}
+      </div>
+      
     </div>
+     <div className="postCenter">
+     <span className="postText">hi</span>
+          <img className="postImg" src={img2} alt="" />
+     </div>
+
+     <div className="postBottom">
+      <div className="postBottomLeft">
+<FavoriteIcon/>
+      </div>
+      <div className="postBottomRight"></div>
+
+     </div>
+
+    </Paper>
+    
+    
+    
+    
+    
+    </>
   );
 }
 

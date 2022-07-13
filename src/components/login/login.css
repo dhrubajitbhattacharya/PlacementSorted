@@ -1,0 +1,46 @@
+
+.login{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.loginContainer{
+    height: 70%;
+    width: 70%;
+    display: flex;
+    background-color: yellow;
+}
+
+.loginRight{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+.loginRight{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loginBox{
+   background-color: aliceblue;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginImg{
+    height: 400px;
+    width: 400px;
+}
+/* .loginRight{
+    background-color: white;
+    margin-left: 500px;
+} */
